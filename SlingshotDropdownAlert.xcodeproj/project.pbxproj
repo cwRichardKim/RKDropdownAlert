@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		993A2842197803A800B9F8F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993A2841197803A800B9F8F0 /* Foundation.framework */; };
+		993A2844197803A800B9F8F0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993A2843197803A800B9F8F0 /* CoreGraphics.framework */; };
+		993A2846197803A800B9F8F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993A2845197803A800B9F8F0 /* UIKit.framework */; };
+		993A284C197803A800B9F8F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 993A284A197803A800B9F8F0 /* InfoPlist.strings */; };
+		993A284E197803A800B9F8F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 993A284D197803A800B9F8F0 /* main.m */; };
+		993A2852197803A800B9F8F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 993A2851197803A800B9F8F0 /* AppDelegate.m */; };
+		993A2855197803A800B9F8F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 993A2853197803A800B9F8F0 /* Main.storyboard */; };
+		993A285A197803A800B9F8F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 993A2859197803A800B9F8F0 /* Images.xcassets */; };
+		993A2861197803A800B9F8F0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993A2860197803A800B9F8F0 /* XCTest.framework */; };
+		993A2862197803A800B9F8F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993A2841197803A800B9F8F0 /* Foundation.framework */; };
+		993A2863197803A800B9F8F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993A2845197803A800B9F8F0 /* UIKit.framework */; };
+		993A286B197803A800B9F8F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 993A2869197803A800B9F8F0 /* InfoPlist.strings */; };
+		993A286D197803A800B9F8F0 /* SlingshotDropdownAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 993A286C197803A800B9F8F0 /* SlingshotDropdownAlertTests.m */; };
+		993A287B1978083C00B9F8F0 /* RKDropviewAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 993A287A1978083C00B9F8F0 /* RKDropviewAlertViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		993A2864197803A800B9F8F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 993A2836197803A800B9F8F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 993A283D197803A800B9F8F0;
+			remoteInfo = SlingshotDropdownAlert;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		993A283E197803A800B9F8F0 /* SlingshotDropdownAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlingshotDropdownAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		993A2841197803A800B9F8F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		993A2843197803A800B9F8F0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		993A2845197803A800B9F8F0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		993A2849197803A800B9F8F0 /* SlingshotDropdownAlert-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SlingshotDropdownAlert-Info.plist"; sourceTree = "<group>"; };
+		993A284B197803A800B9F8F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		993A284D197803A800B9F8F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		993A284F197803A800B9F8F0 /* SlingshotDropdownAlert-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlingshotDropdownAlert-Prefix.pch"; sourceTree = "<group>"; };
+		993A2850197803A800B9F8F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		993A2851197803A800B9F8F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		993A2854197803A800B9F8F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		993A2859197803A800B9F8F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		993A285F197803A800B9F8F0 /* SlingshotDropdownAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlingshotDropdownAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		993A2860197803A800B9F8F0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		993A2868197803A800B9F8F0 /* SlingshotDropdownAlertTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SlingshotDropdownAlertTests-Info.plist"; sourceTree = "<group>"; };
+		993A286A197803A800B9F8F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		993A286C197803A800B9F8F0 /* SlingshotDropdownAlertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlingshotDropdownAlertTests.m; sourceTree = "<group>"; };
+		993A28791978083C00B9F8F0 /* RKDropviewAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKDropviewAlertViewController.h; path = ../RKDropviewAlertViewController.h; sourceTree = "<group>"; };
+		993A287A1978083C00B9F8F0 /* RKDropviewAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKDropviewAlertViewController.m; path = ../RKDropviewAlertViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		993A283B197803A800B9F8F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				993A2844197803A800B9F8F0 /* CoreGraphics.framework in Frameworks */,
+				993A2846197803A800B9F8F0 /* UIKit.framework in Frameworks */,
+				993A2842197803A800B9F8F0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		993A285C197803A800B9F8F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				993A2861197803A800B9F8F0 /* XCTest.framework in Frameworks */,
+				993A2863197803A800B9F8F0 /* UIKit.framework in Frameworks */,
+				993A2862197803A800B9F8F0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		993A2835197803A800B9F8F0 = {
+			isa = PBXGroup;
+			children = (
+				993A2847197803A800B9F8F0 /* SlingshotDropdownAlert */,
+				993A2866197803A800B9F8F0 /* SlingshotDropdownAlertTests */,
+				993A2840197803A800B9F8F0 /* Frameworks */,
+				993A283F197803A800B9F8F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		993A283F197803A800B9F8F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				993A283E197803A800B9F8F0 /* SlingshotDropdownAlert.app */,
+				993A285F197803A800B9F8F0 /* SlingshotDropdownAlertTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		993A2840197803A800B9F8F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				993A2841197803A800B9F8F0 /* Foundation.framework */,
+				993A2843197803A800B9F8F0 /* CoreGraphics.framework */,
+				993A2845197803A800B9F8F0 /* UIKit.framework */,
+				993A2860197803A800B9F8F0 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		993A2847197803A800B9F8F0 /* SlingshotDropdownAlert */ = {
+			isa = PBXGroup;
+			children = (
+				993A2850197803A800B9F8F0 /* AppDelegate.h */,
+				993A2851197803A800B9F8F0 /* AppDelegate.m */,
+				993A2853197803A800B9F8F0 /* Main.storyboard */,
+				993A28791978083C00B9F8F0 /* RKDropviewAlertViewController.h */,
+				993A287A1978083C00B9F8F0 /* RKDropviewAlertViewController.m */,
+				993A2859197803A800B9F8F0 /* Images.xcassets */,
+				993A2848197803A800B9F8F0 /* Supporting Files */,
+			);
+			path = SlingshotDropdownAlert;
+			sourceTree = "<group>";
+		};
+		993A2848197803A800B9F8F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				993A2849197803A800B9F8F0 /* SlingshotDropdownAlert-Info.plist */,
+				993A284A197803A800B9F8F0 /* InfoPlist.strings */,
+				993A284D197803A800B9F8F0 /* main.m */,
+				993A284F197803A800B9F8F0 /* SlingshotDropdownAlert-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		993A2866197803A800B9F8F0 /* SlingshotDropdownAlertTests */ = {
+			isa = PBXGroup;
+			children = (
+				993A286C197803A800B9F8F0 /* SlingshotDropdownAlertTests.m */,
+				993A2867197803A800B9F8F0 /* Supporting Files */,
+			);
+			path = SlingshotDropdownAlertTests;
+			sourceTree = "<group>";
+		};
+		993A2867197803A800B9F8F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				993A2868197803A800B9F8F0 /* SlingshotDropdownAlertTests-Info.plist */,
+				993A2869197803A800B9F8F0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		993A283D197803A800B9F8F0 /* SlingshotDropdownAlert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 993A2870197803A800B9F8F0 /* Build configuration list for PBXNativeTarget "SlingshotDropdownAlert" */;
+			buildPhases = (
+				993A283A197803A800B9F8F0 /* Sources */,
+				993A283B197803A800B9F8F0 /* Frameworks */,
+				993A283C197803A800B9F8F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlingshotDropdownAlert;
+			productName = SlingshotDropdownAlert;
+			productReference = 993A283E197803A800B9F8F0 /* SlingshotDropdownAlert.app */;
+			productType = "com.apple.product-type.application";
+		};
+		993A285E197803A800B9F8F0 /* SlingshotDropdownAlertTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 993A2873197803A800B9F8F0 /* Build configuration list for PBXNativeTarget "SlingshotDropdownAlertTests" */;
+			buildPhases = (
+				993A285B197803A800B9F8F0 /* Sources */,
+				993A285C197803A800B9F8F0 /* Frameworks */,
+				993A285D197803A800B9F8F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				993A2865197803A800B9F8F0 /* PBXTargetDependency */,
+			);
+			name = SlingshotDropdownAlertTests;
+			productName = SlingshotDropdownAlertTests;
+			productReference = 993A285F197803A800B9F8F0 /* SlingshotDropdownAlertTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		993A2836197803A800B9F8F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Richard Kim";
+				TargetAttributes = {
+					993A285E197803A800B9F8F0 = {
+						TestTargetID = 993A283D197803A800B9F8F0;
+					};
+				};
+			};
+			buildConfigurationList = 993A2839197803A800B9F8F0 /* Build configuration list for PBXProject "SlingshotDropdownAlert" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 993A2835197803A800B9F8F0;
+			productRefGroup = 993A283F197803A800B9F8F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				993A283D197803A800B9F8F0 /* SlingshotDropdownAlert */,
+				993A285E197803A800B9F8F0 /* SlingshotDropdownAlertTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		993A283C197803A800B9F8F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				993A285A197803A800B9F8F0 /* Images.xcassets in Resources */,
+				993A284C197803A800B9F8F0 /* InfoPlist.strings in Resources */,
+				993A2855197803A800B9F8F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		993A285D197803A800B9F8F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				993A286B197803A800B9F8F0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		993A283A197803A800B9F8F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				993A2852197803A800B9F8F0 /* AppDelegate.m in Sources */,
+				993A287B1978083C00B9F8F0 /* RKDropviewAlertViewController.m in Sources */,
+				993A284E197803A800B9F8F0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		993A285B197803A800B9F8F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				993A286D197803A800B9F8F0 /* SlingshotDropdownAlertTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		993A2865197803A800B9F8F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 993A283D197803A800B9F8F0 /* SlingshotDropdownAlert */;
+			targetProxy = 993A2864197803A800B9F8F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		993A284A197803A800B9F8F0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				993A284B197803A800B9F8F0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		993A2853197803A800B9F8F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				993A2854197803A800B9F8F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		993A2869197803A800B9F8F0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				993A286A197803A800B9F8F0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		993A286E197803A800B9F8F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		993A286F197803A800B9F8F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		993A2871197803A800B9F8F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlingshotDropdownAlert/SlingshotDropdownAlert-Prefix.pch";
+				INFOPLIST_FILE = "SlingshotDropdownAlert/SlingshotDropdownAlert-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		993A2872197803A800B9F8F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlingshotDropdownAlert/SlingshotDropdownAlert-Prefix.pch";
+				INFOPLIST_FILE = "SlingshotDropdownAlert/SlingshotDropdownAlert-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		993A2874197803A800B9F8F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SlingshotDropdownAlert.app/SlingshotDropdownAlert";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlingshotDropdownAlert/SlingshotDropdownAlert-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SlingshotDropdownAlertTests/SlingshotDropdownAlertTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		993A2875197803A800B9F8F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SlingshotDropdownAlert.app/SlingshotDropdownAlert";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlingshotDropdownAlert/SlingshotDropdownAlert-Prefix.pch";
+				INFOPLIST_FILE = "SlingshotDropdownAlertTests/SlingshotDropdownAlertTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		993A2839197803A800B9F8F0 /* Build configuration list for PBXProject "SlingshotDropdownAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				993A286E197803A800B9F8F0 /* Debug */,
+				993A286F197803A800B9F8F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		993A2870197803A800B9F8F0 /* Build configuration list for PBXNativeTarget "SlingshotDropdownAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				993A2871197803A800B9F8F0 /* Debug */,
+				993A2872197803A800B9F8F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		993A2873197803A800B9F8F0 /* Build configuration list for PBXNativeTarget "SlingshotDropdownAlertTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				993A2874197803A800B9F8F0 /* Debug */,
+				993A2875197803A800B9F8F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 993A2836197803A800B9F8F0 /* Project object */;
+}
