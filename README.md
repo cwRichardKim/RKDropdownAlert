@@ -6,7 +6,7 @@ an extremely simple (and customizeable) alert alternative based on Facebook's ap
 
 Demo:
 
-![alt tag](http://imgur.com/i5RRpjX)
+![alt tag](http://i.imgur.com/i5RRpjX.gif?1)
 
 Customizeable: duration, color, size, text, etc
 
@@ -84,4 +84,4 @@ eg:
 ```
 click to close:
 
-![alt tag](http://imgur.com/GaVlsT0)
+![alt tag](http://i.imgur.com/GaVlsT0.gif?1)
