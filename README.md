@@ -8,7 +8,7 @@ an extremely simple (and customizeable) alert alternative based on Facebook's ap
 
 ##Demo:
 ``` objc
-[RKDropdownAlert title:@"title"message:@"message testing test asdf asd as as a"];
+[RKDropdownAlert title:@"title" message:@"message testing test asdf asd as as a"];
 ```
 ![alt tag](http://i.imgur.com/i5RRpjX.gif?1)
 
@@ -38,7 +38,7 @@ Title is mandatory. Message, background color, text color, and viewing time are 
 
 For example:
 ``` objc
-[RKDropdownAlert title:@"this is a title"message:@"this is a one line message"];
+[RKDropdownAlert title:@"this is a title" message:@"this is a one line message"];
 ```
 
 click to close:
