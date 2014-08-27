@@ -20,7 +20,7 @@ copy the following into your parent controller:
 #import "RKDropdownAlert.h"
 ```
 
-Title is mandatory, message, background color, text color, and viewing time are all optional. Call the alert with any of the following methods:
+Title is mandatory. Message, background color, text color, and viewing time are all optional. Call the alert with any of the following methods:
 
 ``` objc
 +(void)title:(NSString*)title;
