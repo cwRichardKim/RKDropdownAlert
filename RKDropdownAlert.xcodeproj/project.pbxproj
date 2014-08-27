@@ -35,21 +35,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		993A283E197803A800B9F8F0 /* SlingshotDropdownAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlingshotDropdownAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		993A283E197803A800B9F8F0 /* RKDropdownAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RKDropdownAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		993A2841197803A800B9F8F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		993A2843197803A800B9F8F0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		993A2845197803A800B9F8F0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		993A2849197803A800B9F8F0 /* SlingshotDropdownAlert-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SlingshotDropdownAlert-Info.plist"; sourceTree = "<group>"; };
+		993A2849197803A800B9F8F0 /* RKDropdownAlert-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RKDropdownAlert-Info.plist"; sourceTree = "<group>"; };
 		993A284B197803A800B9F8F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		993A284D197803A800B9F8F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		993A284F197803A800B9F8F0 /* SlingshotDropdownAlert-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlingshotDropdownAlert-Prefix.pch"; sourceTree = "<group>"; };
+		993A284F197803A800B9F8F0 /* RKDropdownAlert-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RKDropdownAlert-Prefix.pch"; sourceTree = "<group>"; };
 		993A2850197803A800B9F8F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		993A2851197803A800B9F8F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		993A2854197803A800B9F8F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		993A2859197803A800B9F8F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		993A285F197803A800B9F8F0 /* SlingshotDropdownAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlingshotDropdownAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		993A285F197803A800B9F8F0 /* RKDropdownAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RKDropdownAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		993A2860197803A800B9F8F0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		993A2868197803A800B9F8F0 /* SlingshotDropdownAlertTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SlingshotDropdownAlertTests-Info.plist"; sourceTree = "<group>"; };
+		993A2868197803A800B9F8F0 /* RKDropdownAlertTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RKDropdownAlertTests-Info.plist"; sourceTree = "<group>"; };
 		993A286A197803A800B9F8F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		993A286C197803A800B9F8F0 /* SlingshotDropdownAlertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlingshotDropdownAlertTests.m; sourceTree = "<group>"; };
 		9976F72B19AD7B80009FE604 /* RKDropdownAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKDropdownAlert.h; sourceTree = "<group>"; };
@@ -95,8 +95,8 @@
 		993A283F197803A800B9F8F0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				993A283E197803A800B9F8F0 /* SlingshotDropdownAlert.app */,
-				993A285F197803A800B9F8F0 /* SlingshotDropdownAlertTests.xctest */,
+				993A283E197803A800B9F8F0 /* RKDropdownAlert.app */,
+				993A285F197803A800B9F8F0 /* RKDropdownAlertTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,10 +131,10 @@
 		993A2848197803A800B9F8F0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				993A2849197803A800B9F8F0 /* SlingshotDropdownAlert-Info.plist */,
+				993A2849197803A800B9F8F0 /* RKDropdownAlert-Info.plist */,
 				993A284A197803A800B9F8F0 /* InfoPlist.strings */,
 				993A284D197803A800B9F8F0 /* main.m */,
-				993A284F197803A800B9F8F0 /* SlingshotDropdownAlert-Prefix.pch */,
+				993A284F197803A800B9F8F0 /* RKDropdownAlert-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -151,7 +151,7 @@
 		993A2867197803A800B9F8F0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				993A2868197803A800B9F8F0 /* SlingshotDropdownAlertTests-Info.plist */,
+				993A2868197803A800B9F8F0 /* RKDropdownAlertTests-Info.plist */,
 				993A2869197803A800B9F8F0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -160,9 +160,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		993A283D197803A800B9F8F0 /* SlingshotDropdownAlert */ = {
+		993A283D197803A800B9F8F0 /* RKDropdownAlert */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 993A2870197803A800B9F8F0 /* Build configuration list for PBXNativeTarget "SlingshotDropdownAlert" */;
+			buildConfigurationList = 993A2870197803A800B9F8F0 /* Build configuration list for PBXNativeTarget "RKDropdownAlert" */;
 			buildPhases = (
 				993A283A197803A800B9F8F0 /* Sources */,
 				993A283B197803A800B9F8F0 /* Frameworks */,
@@ -172,14 +172,14 @@
 			);
 			dependencies = (
 			);
-			name = SlingshotDropdownAlert;
+			name = RKDropdownAlert;
 			productName = SlingshotDropdownAlert;
-			productReference = 993A283E197803A800B9F8F0 /* SlingshotDropdownAlert.app */;
+			productReference = 993A283E197803A800B9F8F0 /* RKDropdownAlert.app */;
 			productType = "com.apple.product-type.application";
 		};
-		993A285E197803A800B9F8F0 /* SlingshotDropdownAlertTests */ = {
+		993A285E197803A800B9F8F0 /* RKDropdownAlertTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 993A2873197803A800B9F8F0 /* Build configuration list for PBXNativeTarget "SlingshotDropdownAlertTests" */;
+			buildConfigurationList = 993A2873197803A800B9F8F0 /* Build configuration list for PBXNativeTarget "RKDropdownAlertTests" */;
 			buildPhases = (
 				993A285B197803A800B9F8F0 /* Sources */,
 				993A285C197803A800B9F8F0 /* Frameworks */,
@@ -190,9 +190,9 @@
 			dependencies = (
 				993A2865197803A800B9F8F0 /* PBXTargetDependency */,
 			);
-			name = SlingshotDropdownAlertTests;
+			name = RKDropdownAlertTests;
 			productName = SlingshotDropdownAlertTests;
-			productReference = 993A285F197803A800B9F8F0 /* SlingshotDropdownAlertTests.xctest */;
+			productReference = 993A285F197803A800B9F8F0 /* RKDropdownAlertTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -209,7 +209,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 993A2839197803A800B9F8F0 /* Build configuration list for PBXProject "SlingshotDropdownAlert" */;
+			buildConfigurationList = 993A2839197803A800B9F8F0 /* Build configuration list for PBXProject "RKDropdownAlert" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -222,8 +222,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				993A283D197803A800B9F8F0 /* SlingshotDropdownAlert */,
-				993A285E197803A800B9F8F0 /* SlingshotDropdownAlertTests */,
+				993A283D197803A800B9F8F0 /* RKDropdownAlert */,
+				993A285E197803A800B9F8F0 /* RKDropdownAlertTests */,
 			);
 		};
 /* End PBXProject section */
@@ -274,7 +274,7 @@
 /* Begin PBXTargetDependency section */
 		993A2865197803A800B9F8F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 993A283D197803A800B9F8F0 /* SlingshotDropdownAlert */;
+			target = 993A283D197803A800B9F8F0 /* RKDropdownAlert */;
 			targetProxy = 993A2864197803A800B9F8F0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -383,8 +383,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SlingshotDropdownAlert/SlingshotDropdownAlert-Prefix.pch";
-				INFOPLIST_FILE = "SlingshotDropdownAlert/SlingshotDropdownAlert-Info.plist";
+				GCC_PREFIX_HEADER = "SlingshotDropdownAlert/RKDropdownAlert-Prefix.pch";
+				INFOPLIST_FILE = "SlingshotDropdownAlert/RKDropdownAlert-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -396,8 +396,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SlingshotDropdownAlert/SlingshotDropdownAlert-Prefix.pch";
-				INFOPLIST_FILE = "SlingshotDropdownAlert/SlingshotDropdownAlert-Info.plist";
+				GCC_PREFIX_HEADER = "SlingshotDropdownAlert/RKDropdownAlert-Prefix.pch";
+				INFOPLIST_FILE = "SlingshotDropdownAlert/RKDropdownAlert-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -418,8 +418,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "SlingshotDropdownAlertTests/SlingshotDropdownAlertTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "SlingshotDropdownAlertTests/RKDropdownAlertTests-Info.plist";
+				PRODUCT_NAME = RKDropdownAlertTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -436,8 +436,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SlingshotDropdownAlert/SlingshotDropdownAlert-Prefix.pch";
-				INFOPLIST_FILE = "SlingshotDropdownAlertTests/SlingshotDropdownAlertTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "SlingshotDropdownAlertTests/RKDropdownAlertTests-Info.plist";
+				PRODUCT_NAME = RKDropdownAlertTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -446,7 +446,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		993A2839197803A800B9F8F0 /* Build configuration list for PBXProject "SlingshotDropdownAlert" */ = {
+		993A2839197803A800B9F8F0 /* Build configuration list for PBXProject "RKDropdownAlert" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				993A286E197803A800B9F8F0 /* Debug */,
@@ -455,7 +455,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		993A2870197803A800B9F8F0 /* Build configuration list for PBXNativeTarget "SlingshotDropdownAlert" */ = {
+		993A2870197803A800B9F8F0 /* Build configuration list for PBXNativeTarget "RKDropdownAlert" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				993A2871197803A800B9F8F0 /* Debug */,
@@ -464,7 +464,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		993A2873197803A800B9F8F0 /* Build configuration list for PBXNativeTarget "SlingshotDropdownAlertTests" */ = {
+		993A2873197803A800B9F8F0 /* Build configuration list for PBXNativeTarget "RKDropdownAlertTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				993A2874197803A800B9F8F0 /* Debug */,

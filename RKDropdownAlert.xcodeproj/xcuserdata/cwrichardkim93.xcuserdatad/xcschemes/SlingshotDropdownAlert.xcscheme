@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "993A283D197803A800B9F8F0"
                BuildableName = "SlingshotDropdownAlert.app"
-               BlueprintName = "SlingshotDropdownAlert"
-               ReferencedContainer = "container:SlingshotDropdownAlert.xcodeproj">
+               BlueprintName = "RKDropdownAlert"
+               ReferencedContainer = "container:RKDropdownAlert.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "993A285E197803A800B9F8F0"
                BuildableName = "SlingshotDropdownAlertTests.xctest"
-               BlueprintName = "SlingshotDropdownAlertTests"
-               ReferencedContainer = "container:SlingshotDropdownAlert.xcodeproj">
+               BlueprintName = "RKDropdownAlertTests"
+               ReferencedContainer = "container:RKDropdownAlert.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "993A283D197803A800B9F8F0"
             BuildableName = "SlingshotDropdownAlert.app"
-            BlueprintName = "SlingshotDropdownAlert"
-            ReferencedContainer = "container:SlingshotDropdownAlert.xcodeproj">
+            BlueprintName = "RKDropdownAlert"
+            ReferencedContainer = "container:RKDropdownAlert.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "993A283D197803A800B9F8F0"
             BuildableName = "SlingshotDropdownAlert.app"
-            BlueprintName = "SlingshotDropdownAlert"
-            ReferencedContainer = "container:SlingshotDropdownAlert.xcodeproj">
+            BlueprintName = "RKDropdownAlert"
+            ReferencedContainer = "container:RKDropdownAlert.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "993A283D197803A800B9F8F0"
             BuildableName = "SlingshotDropdownAlert.app"
-            BlueprintName = "SlingshotDropdownAlert"
-            ReferencedContainer = "container:SlingshotDropdownAlert.xcodeproj">
+            BlueprintName = "RKDropdownAlert"
+            ReferencedContainer = "container:RKDropdownAlert.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

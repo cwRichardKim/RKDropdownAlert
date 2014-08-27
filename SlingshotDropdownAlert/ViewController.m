@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
-    [RKDropdownAlert title:@"this is a message"message:@"this is two lines this is two lines this is two lines "];
+    [RKDropdownAlert title:@"Hello World" message:@"tons better than UIAlertView"];
 }
 
 - (void)didReceiveMemoryWarning
