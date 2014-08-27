@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>447F531F-5F14-4C68-893D-0395B2E5B4CC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SlingshotDropdownAlert</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CF6B930C-641E-4D74-B83D-BED4E49BF408</key>
+		<string>https://github.com/cwRichardKim/RKDropdownAlert.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SlingshotDropdownAlert.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CF6B930C-641E-4D74-B83D-BED4E49BF408</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/cwRichardKim/RKDropdownAlert.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CF6B930C-641E-4D74-B83D-BED4E49BF408</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CF6B930C-641E-4D74-B83D-BED4E49BF408</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RKDropdownAlert</string>
+		</dict>
+	</array>
+</dict>
+</plist>

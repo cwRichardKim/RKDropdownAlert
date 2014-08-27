@@ -20,7 +20,8 @@
 		993A2863197803A800B9F8F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993A2845197803A800B9F8F0 /* UIKit.framework */; };
 		993A286B197803A800B9F8F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 993A2869197803A800B9F8F0 /* InfoPlist.strings */; };
 		993A286D197803A800B9F8F0 /* SlingshotDropdownAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 993A286C197803A800B9F8F0 /* SlingshotDropdownAlertTests.m */; };
-		993A287B1978083C00B9F8F0 /* RKDropviewAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 993A287A1978083C00B9F8F0 /* RKDropviewAlertViewController.m */; };
+		9976F72D19AD7B80009FE604 /* RKDropdownAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 9976F72C19AD7B80009FE604 /* RKDropdownAlert.m */; };
+		9976F73019AD7B9A009FE604 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9976F72F19AD7B9A009FE604 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +52,10 @@
 		993A2868197803A800B9F8F0 /* SlingshotDropdownAlertTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SlingshotDropdownAlertTests-Info.plist"; sourceTree = "<group>"; };
 		993A286A197803A800B9F8F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		993A286C197803A800B9F8F0 /* SlingshotDropdownAlertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlingshotDropdownAlertTests.m; sourceTree = "<group>"; };
-		993A28791978083C00B9F8F0 /* RKDropviewAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKDropviewAlertViewController.h; path = ../RKDropviewAlertViewController.h; sourceTree = "<group>"; };
-		993A287A1978083C00B9F8F0 /* RKDropviewAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKDropviewAlertViewController.m; path = ../RKDropviewAlertViewController.m; sourceTree = "<group>"; };
+		9976F72B19AD7B80009FE604 /* RKDropdownAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKDropdownAlert.h; sourceTree = "<group>"; };
+		9976F72C19AD7B80009FE604 /* RKDropdownAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKDropdownAlert.m; sourceTree = "<group>"; };
+		9976F72E19AD7B9A009FE604 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9976F72F19AD7B9A009FE604 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +118,10 @@
 				993A2850197803A800B9F8F0 /* AppDelegate.h */,
 				993A2851197803A800B9F8F0 /* AppDelegate.m */,
 				993A2853197803A800B9F8F0 /* Main.storyboard */,
-				993A28791978083C00B9F8F0 /* RKDropviewAlertViewController.h */,
-				993A287A1978083C00B9F8F0 /* RKDropviewAlertViewController.m */,
+				9976F72E19AD7B9A009FE604 /* ViewController.h */,
+				9976F72F19AD7B9A009FE604 /* ViewController.m */,
+				9976F72B19AD7B80009FE604 /* RKDropdownAlert.h */,
+				9976F72C19AD7B80009FE604 /* RKDropdownAlert.m */,
 				993A2859197803A800B9F8F0 /* Images.xcassets */,
 				993A2848197803A800B9F8F0 /* Supporting Files */,
 			);
@@ -250,7 +255,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				993A2852197803A800B9F8F0 /* AppDelegate.m in Sources */,
-				993A287B1978083C00B9F8F0 /* RKDropviewAlertViewController.m in Sources */,
+				9976F72D19AD7B80009FE604 /* RKDropdownAlert.m in Sources */,
+				9976F73019AD7B9A009FE604 /* ViewController.m in Sources */,
 				993A284E197803A800B9F8F0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +462,7 @@
 				993A2872197803A800B9F8F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		993A2873197803A800B9F8F0 /* Build configuration list for PBXNativeTarget "SlingshotDropdownAlertTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +471,7 @@
 				993A2875197803A800B9F8F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
