@@ -7,7 +7,9 @@ an extremely simple (and customizeable) alert alternative based on Facebook's ap
 [twitter](https://twitter.com/cwRichardKim) <--- I am a very light twitterer, so I wont spam you
 
 ##Demo:
-
+``` objc
+[RKDropdownAlert title:@"title"message:@"message testing test asdf asd as as a"];
+```
 ![alt tag](http://i.imgur.com/i5RRpjX.gif?1)
 
 Customizeable: duration, color, size, text, etc
