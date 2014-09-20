@@ -28,7 +28,20 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
-    [RKDropdownAlert title:@"Hello World" message:@"tons better than UIAlertView"];
+    
+    //%%% quick and dirty: calls all default values
+//    [RKDropdownAlert show];
+    
+    
+    //%%% 3 examples: these steadily increase in customizeability
+
+//    [RKDropdownAlert title:@"Hello World"];
+    
+//    [RKDropdownAlert title:@"Hello World" message:@"tons better than UIAlertView" time:1];
+    
+//    [RKDropdownAlert title:@"Hello World" message:@"tons better than UIAlertView" backgroundColor:[UIColor grayColor] textColor:[UIColor whiteColor] time:10];
+
+    //%%% etc. check the .h to see all the different ways you can call this function
 }
 
 - (void)didReceiveMemoryWarning

@@ -14,33 +14,47 @@ static int Y_BUFFER = 10; //buffer distance on top/bottom for the text
 static int TIME = 3; //default time in seconds before the view is hidden
 static int STATUS_BAR_HEIGHT = 20;
 static int FONT_SIZE = 14;
-
+NSString *DEFAULT_TITLE;
 
 @implementation RKDropdownAlert{
     UILabel *titleLabel;
     UILabel *messageLabel;
 }
+@synthesize defaultTextColor;
+@synthesize defaultViewColor;
 
-+(RKDropdownAlert*)alertView
+//////////////////////////////////////////////////////////
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//%%%%%%%%%%%%%%%       customizable       %%%%%%%%%%%%%%%
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//
+
+//%%% customize this to be whatever you want!
+-(void)setupDefaultAttributes
 {
-    RKDropdownAlert *alert = [[self alloc]initWithFrame:CGRectMake(0, -HEIGHT, [[UIScreen mainScreen]bounds].size.width, HEIGHT)];
-    return alert;
+    #warning requires customization
+    defaultViewColor = [UIColor colorWithRed:0.98 green:0.66 blue:0.2 alpha:1];//%%% default color from slingshot
+    defaultTextColor = [UIColor whiteColor];
+    DEFAULT_TITLE = @"custom text here";
 }
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor colorWithRed:0.98 green:0.66 blue:0.2 alpha:1]; //%%% default color from slingshot
+        [self setupDefaultAttributes];
+        
+        self.backgroundColor = defaultViewColor;
         
         titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(X_BUFFER, STATUS_BAR_HEIGHT, frame.size.width-2*X_BUFFER, 30)];
         [titleLabel setFont:[UIFont fontWithName:@"Arial-BoldMT" size:FONT_SIZE]];
-        titleLabel.textColor = [UIColor whiteColor];
+        titleLabel.textColor = defaultTextColor;
         titleLabel.textAlignment = NSTextAlignmentCenter;
         [self addSubview:titleLabel];
         
         messageLabel = [[UILabel alloc]initWithFrame:CGRectMake(X_BUFFER, STATUS_BAR_HEIGHT +Y_BUFFER*2.3, frame.size.width-2*X_BUFFER, 40)];
-        messageLabel.textColor = [UIColor whiteColor];
+        messageLabel.textColor = defaultTextColor;
         messageLabel.font = [messageLabel.font fontWithSize:FONT_SIZE];
         messageLabel.lineBreakMode = NSLineBreakByWordWrapping;
         messageLabel.numberOfLines = 2; // 2 lines ; 0 - dynamic number of lines
@@ -50,6 +64,68 @@ static int FONT_SIZE = 14;
         [self addTarget:self action:@selector(hideView:) forControlEvents:UIControlEventTouchUpInside];
     }
     return self;
+}
+
+
+//%%% button method (what happens when you touch the drop down view)
+-(void)viewWasTapped:(UIButton *)alertView
+{
+    #warning write your custom method here
+    
+    /*
+     eg: say you have a messaging component in your app and someone sends a message to the user. Here is where you would write the method that takes the user to the conversation with the person that sent them the message
+     */
+    
+    //%%% this hides the view, you can remove this if you don't want the view to disappear on tap
+    [self hideView:alertView];
+}
+
+-(void)hideView:(UIButton *)alertView
+{
+    if (alertView) {
+        [UIView animateWithDuration:ANIMATION_TIME animations:^{
+            CGRect frame = alertView.frame;
+            frame.origin.y = -HEIGHT;
+            alertView.frame = frame;
+        }];
+        [self performSelector:@selector(removeView:) withObject:alertView afterDelay:ANIMATION_TIME];
+    }
+}
+
+-(void)removeView:(UIButton *)alertView
+{
+    if (alertView){
+        [alertView removeFromSuperview];
+    }
+}
+
+//
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//%%%%%%%%%%%%%%%       customizable        %%%%%%%%%%%%%%
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//////////////////////////////////////////////////////////
+
+
+//////////////////////////////////////////////////////////
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//%%%%%%%%%%%%%%%          Ignore          %%%%%%%%%%%%%%%
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//
+//%%% these are necessary methods that call each other depending on which method you call. Generally shouldn't edit these unless you know what you're doing
+
+
++(RKDropdownAlert*)alertView
+{
+    RKDropdownAlert *alert = [[self alloc]initWithFrame:CGRectMake(0, -HEIGHT, [[UIScreen mainScreen]bounds].size.width, HEIGHT)];
+    return alert;
+}
+
+//%%% shows all the default stuff
++(void)show
+{
+    [[self alertView]title:DEFAULT_TITLE message:nil backgroundColor:nil textColor:nil time:-1];
 }
 
 +(void)title:(NSString*)title
@@ -91,8 +167,6 @@ static int FONT_SIZE = 14;
 {
     [[self alertView]title:title message:message backgroundColor:backgroundColor textColor:textColor time:seconds];
 }
-
-
 
 -(void)title:(NSString*)title message:(NSString*)message backgroundColor:(UIColor*)backgroundColor textColor:(UIColor*)textColor time:(NSInteger)seconds
 {
@@ -144,6 +218,7 @@ static int FONT_SIZE = 14;
     [self performSelector:@selector(hideView:) withObject:self afterDelay:time+ANIMATION_TIME];
 }
 
+
 -(BOOL)messageTextIsOneLine
 {
     CGSize size = [messageLabel.text sizeWithAttributes:
@@ -156,33 +231,10 @@ static int FONT_SIZE = 14;
     return YES;
 }
 
--(void)hideView:(UIButton *)alertView
-{
-    if (alertView) {
-        [UIView animateWithDuration:ANIMATION_TIME animations:^{
-            CGRect frame = alertView.frame;
-            frame.origin.y = -HEIGHT;
-            alertView.frame = frame;
-        }];
-        [self performSelector:@selector(removeView:) withObject:alertView afterDelay:ANIMATION_TIME];
-    }
-}
-
--(void)removeView:(UIButton *)alertView
-{
-    if (alertView){
-        [alertView removeFromSuperview];
-    }
-}
-
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
-
+//
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//%%%%%%%%%%%%%%%           Ignore          %%%%%%%%%%%%%%
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//////////////////////////////////////////////////////////
 @end

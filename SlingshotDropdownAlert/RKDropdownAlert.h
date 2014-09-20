@@ -14,6 +14,7 @@
 //%%% Mandatory: title
 //%%% Optional: message,
 
++(void)show;
 +(void)title:(NSString*)title;
 +(void)title:(NSString*)title time:(NSInteger)seconds;
 +(void)title:(NSString*)title backgroundColor:(UIColor*)backgroundColor textColor:(UIColor*)textColor;
@@ -25,7 +26,8 @@
 +(void)title:(NSString*)title message:(NSString*)message backgroundColor:(UIColor*)backgroundColor textColor:(UIColor*)textColor time:(NSInteger)seconds;
 
 
-
+@property UIColor *defaultViewColor;
+@property UIColor *defaultTextColor;
 
 -(void)title:(NSString*)title message:(NSString*)message backgroundColor:(UIColor*)backgroundColor textColor:(UIColor*)textColor time:(NSInteger)seconds;
 

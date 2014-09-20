@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "993A283D197803A800B9F8F0"
-               BuildableName = "SlingshotDropdownAlert.app"
+               BuildableName = "RKDropdownAlert.app"
                BlueprintName = "RKDropdownAlert"
                ReferencedContainer = "container:RKDropdownAlert.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "993A285E197803A800B9F8F0"
-               BuildableName = "SlingshotDropdownAlertTests.xctest"
+               BuildableName = "RKDropdownAlertTests.xctest"
                BlueprintName = "RKDropdownAlertTests"
                ReferencedContainer = "container:RKDropdownAlert.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "993A283D197803A800B9F8F0"
-            BuildableName = "SlingshotDropdownAlert.app"
+            BuildableName = "RKDropdownAlert.app"
             BlueprintName = "RKDropdownAlert"
             ReferencedContainer = "container:RKDropdownAlert.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "993A283D197803A800B9F8F0"
-            BuildableName = "SlingshotDropdownAlert.app"
+            BuildableName = "RKDropdownAlert.app"
             BlueprintName = "RKDropdownAlert"
             ReferencedContainer = "container:RKDropdownAlert.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "993A283D197803A800B9F8F0"
-            BuildableName = "SlingshotDropdownAlert.app"
+            BuildableName = "RKDropdownAlert.app"
             BlueprintName = "RKDropdownAlert"
             ReferencedContainer = "container:RKDropdownAlert.xcodeproj">
          </BuildableReference>
