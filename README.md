@@ -1,7 +1,7 @@
 RKDropdownAlert
 ======================
 
-an extremely simple (and customizeable) alert alternative based on Facebook's app Slingshot
+an extremely simple (and customizeable) alert alternative based on Facebook's app Slingshot, and inspiration from SVProgressHUD (yes, it's just as easy to use as SV)
 
 ##Updates, Questions, and Requests
 [twitter](https://twitter.com/cwRichardKim) <--- I am a very light twitterer, so I wont spam you
