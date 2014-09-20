@@ -8,23 +8,43 @@ an extremely simple (and customizeable) alert alternative based on Facebook's ap
 
 ##Demo:
 ``` objc
-[RKDropdownAlert title:@"title" message:@"message testing test asdf asd as as a"];
+[RKDropdownAlert title:@"Hello World" message:@"Tons better than UIAlertView!"];
 ```
-![alt tag](http://i.imgur.com/i5RRpjX.gif?1)
+![alt tag](http://i.imgur.com/tE5p9L0.gif?1)
 
-Customizeable: duration, color, size, text, etc
+##In Action:
+![first](http://i.imgur.com/d6voW3W.gif)  
 
-##Code
+![second](http://i.imgur.com/OlYystx.gif)
+
+##Easy Default Call
+``` objc
+[RKDropdownAlert show];
+```
+Set the default text, color, size, font, etc so that when you call "show" it pulls up an easy default call
+
+![easy](http://i.imgur.com/M0cH5DF.gif?1)
+
+##Setup
 
 
-copy the following into your parent controller:
+First, download the file, or create a branch of the repo. Copy the following into your parent controller:
 ``` objc
 #import "RKDropdownAlert.h"
 ```
 
-Title is mandatory. Message, background color, text color, and viewing time are all optional. Call the alert with any of the following methods:
-
+You will probably want to customize the default call ([RKDropdownAlert show]), as well as other features such as color, the method called when the user taps the view, etc.  Look for 
 ``` objc
+#warning
+```
+tags in the RKDropdownAlert.m for methods that you should customize.
+
+
+##Calling the Alert
+
+Use the following variations of title, message, backgroundColor, textColor, and time
+``` objc
++(void)show;
 +(void)title:(NSString*)title;
 +(void)title:(NSString*)title time:(NSInteger)seconds;
 +(void)title:(NSString*)title backgroundColor:(UIColor*)backgroundColor textColor:(UIColor*)textColor;
@@ -38,9 +58,14 @@ Title is mandatory. Message, background color, text color, and viewing time are 
 
 For example:
 ``` objc
+[RKDropdownAlert show];
+
 [RKDropdownAlert title:@"this is a title" message:@"this is a one line message"];
+
+[RKDropdownAlert title:@"Hello World" message:@"tons better than UIAlertView" backgroundColor:[UIColor grayColor] textColor:[UIColor whiteColor] time:10];
 ```
 
-click to close:
+##Touch Up Inside Method
+Write your own method for when the user touches the view (default is hide the view)
 
 ![alt tag](http://i.imgur.com/GaVlsT0.gif?1)
