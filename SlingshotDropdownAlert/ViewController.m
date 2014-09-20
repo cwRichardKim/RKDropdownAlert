@@ -30,14 +30,14 @@
     self.view.backgroundColor = [UIColor blackColor];
     
     //%%% quick and dirty: calls all default values
-//    [RKDropdownAlert show];
+    [RKDropdownAlert show];
     
     
     //%%% 3 examples: these steadily increase in customizeability
 
 //    [RKDropdownAlert title:@"Hello World"];
     
-//    [RKDropdownAlert title:@"Hello World" message:@"tons better than UIAlertView" time:1];
+//    [RKDropdownAlert title:@"Hello World" message:@"Tons better than UIAlertView!" time:1];
     
 //    [RKDropdownAlert title:@"Hello World" message:@"tons better than UIAlertView" backgroundColor:[UIColor grayColor] textColor:[UIColor whiteColor] time:10];
 
@@ -60,5 +60,9 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
 
 @end

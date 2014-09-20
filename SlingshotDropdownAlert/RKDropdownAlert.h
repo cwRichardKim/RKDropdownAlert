@@ -11,8 +11,7 @@
 @interface RKDropdownAlert : UIButton
 
 
-//%%% Mandatory: title
-//%%% Optional: message,
+//%%% Additions: title, message, time, background color, text color
 
 +(void)show;
 +(void)title:(NSString*)title;

@@ -7,7 +7,9 @@
 //
 
 #import "RKDropdownAlert.h"
-static int HEIGHT = 90; //height of the alert view
+
+#warning customize these default values
+static int HEIGHT = 80; //height of the alert view
 static float ANIMATION_TIME = .3; //time it takes for the animation to complete in seconds
 static int X_BUFFER = 10; //buffer distance on each side for the text
 static int Y_BUFFER = 10; //buffer distance on top/bottom for the text
@@ -35,8 +37,11 @@ NSString *DEFAULT_TITLE;
 {
     #warning requires customization
     defaultViewColor = [UIColor colorWithRed:0.98 green:0.66 blue:0.2 alpha:1];//%%% default color from slingshot
+    
     defaultTextColor = [UIColor whiteColor];
-    DEFAULT_TITLE = @"custom text here";
+    DEFAULT_TITLE = @"Default Text Here";
+    
+    //%%% to change the default time, height, animation speed, fonts, etc check the top of the this file
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -70,7 +75,7 @@ NSString *DEFAULT_TITLE;
 //%%% button method (what happens when you touch the drop down view)
 -(void)viewWasTapped:(UIButton *)alertView
 {
-    #warning write your custom method here
+    #warning write your custom method here (if you want to)
     
     /*
      eg: say you have a messaging component in your app and someone sends a message to the user. Here is where you would write the method that takes the user to the conversation with the person that sent them the message
