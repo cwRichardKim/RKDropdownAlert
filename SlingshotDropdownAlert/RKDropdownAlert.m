@@ -39,7 +39,7 @@ NSString *DEFAULT_TITLE;
     defaultViewColor = [UIColor colorWithRed:0.98 green:0.66 blue:0.2 alpha:1];//%%% default color from slingshot
     
     defaultTextColor = [UIColor whiteColor];
-    DEFAULT_TITLE = @"Default Text Here";
+    DEFAULT_TITLE = @"Default Text Here"; //%%% this text can only be edited if you do not use the pod solution. check the repo's README for more information
     
     //%%% to change the default time, height, animation speed, fonts, etc check the top of the this file
 }
