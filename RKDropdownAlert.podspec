@@ -81,7 +81,7 @@ s.source       = { :git => "https://github.com/cwRichardKim/RKDropdownAlert.git"
 #  Not including the public_header_files will make all headers public.
 #
 
-s.source_files  = 'RKDropdownAlert.h', 'RKDropdownAlert.m'
+s.source_files  = 'SlingshotDropdownAlert/RKDropdownAlert.h', 'SlingshotDropdownAlert/RKDropdownAlert.m'
 
 # s.public_header_files = "Classes/**/*.h"
 
