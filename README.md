@@ -10,6 +10,11 @@ __Article comparing UIAlertView, SVProgressHUD and RKropdownAlert__
 
 https://medium.com/@cwRichardKim/devux-uialertview-alternatives-3a78ab64cbf8
 
+##Pod
+Don't use pods if you want to customize or use the quick and easy [RKDropdownAlert show]
+	
+	pod 'RKDropdownAlert'
+
 ##Demo:
 ``` objc
 [RKDropdownAlert title:@"Hello World" message:@"Tons better than UIAlertView!"];
