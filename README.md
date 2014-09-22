@@ -6,7 +6,7 @@ an extremely simple (and customizeable) alert alternative based on Facebook's ap
 ##Updates, Questions, and Requests
 [twitter](https://twitter.com/cwRichardKim) <--- I am a very light twitterer, so I wont spam you
 
-##Article comparing UIAlertView, SVProgressHUD and RKropdownAlert
+__Article comparing UIAlertView, SVProgressHUD and RKropdownAlert__
 https://medium.com/@cwRichardKim/devux-uialertview-alternatives-3a78ab64cbf8
 
 ##Demo:
