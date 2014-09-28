@@ -34,9 +34,11 @@ NSString *DEFAULT_TITLE;
 //
 
 //%%% customize this to be whatever you want!
+// These are the default value. For example, if you don't specify a color, then
+// your default color will be used (which is orange unless you change it)
 -(void)setupDefaultAttributes
 {
-    #warning requires customization
+    #warning default call requires customization
     defaultViewColor = [UIColor colorWithRed:0.98 green:0.66 blue:0.2 alpha:1];//%%% default color from slingshot
     
     defaultTextColor = [UIColor whiteColor];
@@ -53,12 +55,14 @@ NSString *DEFAULT_TITLE;
         
         self.backgroundColor = defaultViewColor;
         
+        //%%% title setup (the bolded text at the top of the view)
         titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(X_BUFFER, STATUS_BAR_HEIGHT, frame.size.width-2*X_BUFFER, 30)];
         [titleLabel setFont:[UIFont fontWithName:@"Arial-BoldMT" size:FONT_SIZE]];
         titleLabel.textColor = defaultTextColor;
         titleLabel.textAlignment = NSTextAlignmentCenter;
         [self addSubview:titleLabel];
         
+        //%%% message setup (the regular text below the title)
         messageLabel = [[UILabel alloc]initWithFrame:CGRectMake(X_BUFFER, STATUS_BAR_HEIGHT +Y_BUFFER*2.3, frame.size.width-2*X_BUFFER, 40)];
         messageLabel.textColor = defaultTextColor;
         messageLabel.font = [messageLabel.font fontWithSize:FONT_SIZE];
