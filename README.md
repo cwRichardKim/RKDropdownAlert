@@ -11,7 +11,7 @@ __Article comparing UIAlertView, SVProgressHUD and RKropdownAlert__
 https://medium.com/@cwRichardKim/devux-uialertview-alternatives-3a78ab64cbf8
 
 ##Pod
-Don't use pods if you want to customize or use the quick and easy [RKDropdownAlert show]
+WAIT! Don't use pods if you want to customize or use the quick and easy [RKDropdownAlert show]
 	
 	pod 'RKDropdownAlert'
 
@@ -44,7 +44,7 @@ First, download the file, or create a branch of the repo. Copy the following int
 
 You will probably want to customize the default call ([RKDropdownAlert show]), as well as other features such as color, the method called when the user taps the view, etc.  Look for 
 ``` objc
-#warning
+//%%% CUSTOMIZE
 ```
 tags in the RKDropdownAlert.m for methods that you should customize.
 
