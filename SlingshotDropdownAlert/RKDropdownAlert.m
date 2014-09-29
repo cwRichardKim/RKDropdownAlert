@@ -11,7 +11,7 @@
 
 //%%% CUSTOMIZE FOR DEFAULT SETTINGS
 // These values specify what the view will look like
-static int HEIGHT = 80; //height of the alert view
+static int HEIGHT = 90; //height of the alert view
 static float ANIMATION_TIME = .3; //time it takes for the animation to complete in seconds
 static int X_BUFFER = 10; //buffer distance on each side for the text
 static int Y_BUFFER = 10; //buffer distance on top/bottom for the text
