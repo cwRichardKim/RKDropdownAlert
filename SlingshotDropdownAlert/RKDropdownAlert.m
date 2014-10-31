@@ -20,10 +20,14 @@ static int STATUS_BAR_HEIGHT = 20;
 static int FONT_SIZE = 14;
 NSString *DEFAULT_TITLE;
 
-@implementation RKDropdownAlert{
+@implementation RKDropdownAlert
+{
+    UIWindow *window;
+
     UILabel *titleLabel;
     UILabel *messageLabel;
 }
+
 @synthesize defaultTextColor;
 @synthesize defaultViewColor;
 
@@ -97,16 +101,17 @@ NSString *DEFAULT_TITLE;
             CGRect frame = alertView.frame;
             frame.origin.y = -HEIGHT;
             alertView.frame = frame;
+        } completion:^(BOOL finished) {
+            [self removeView:alertView];
         }];
-        [self performSelector:@selector(removeView:) withObject:alertView afterDelay:ANIMATION_TIME];
     }
 }
 
 -(void)removeView:(UIButton *)alertView
 {
-    if (alertView){
-        [alertView removeFromSuperview];
-    }
+    [alertView removeFromSuperview];
+    window.hidden = YES;
+    window = nil;
 }
 
 //
@@ -209,14 +214,14 @@ NSString *DEFAULT_TITLE;
         time = TIME;
     }
     
-    if(!self.superview){
-        NSEnumerator *frontToBackWindows = [[[UIApplication sharedApplication]windows]reverseObjectEnumerator];
+    if ( !self.superview ) {
+        window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
         
-        for (UIWindow *window in frontToBackWindows)
-            if (window.windowLevel == UIWindowLevelNormal) {
-                [[[window subviews] lastObject] addSubview:self];
-                break;
-            }
+        window.windowLevel = UIWindowLevelNormal;
+        window.backgroundColor = [UIColor clearColor];
+        
+        [window addSubview:self];
+        [window makeKeyAndVisible];
     }
     
     [UIView animateWithDuration:ANIMATION_TIME animations:^{
