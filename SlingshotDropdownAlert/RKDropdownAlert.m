@@ -214,7 +214,7 @@ NSString *DEFAULT_TITLE;
         
         for (UIWindow *window in frontToBackWindows)
             if (window.windowLevel == UIWindowLevelNormal) {
-                [[[window subviews] lastObject] addSubview:self];
+                [window addSubview:self];
                 break;
             }
     }
