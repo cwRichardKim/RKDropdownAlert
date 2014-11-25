@@ -213,7 +213,7 @@ NSString *DEFAULT_TITLE;
         NSEnumerator *frontToBackWindows = [[[UIApplication sharedApplication]windows]reverseObjectEnumerator];
         
         for (UIWindow *window in frontToBackWindows)
-            if (window.windowLevel == UIWindowLevelNormal) {
+            if (window.windowLevel == UIWindowLevelNormal && !window.hidden) {
                 [window addSubview:self];
                 break;
             }
