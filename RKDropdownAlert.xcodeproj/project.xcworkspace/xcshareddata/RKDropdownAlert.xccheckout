@@ -14,7 +14,7 @@
 		<string>https://github.com/cwRichardKim/RKDropdownAlert.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>RKDropdownAlert.xcodeproj/project.xcworkspace</string>
+	<string>RKDropdownAlert.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>D23281761FEA07DAB941A03232726676CE38B466</key>
