@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RKDropdownAlert.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

@@ -80,14 +80,13 @@ NSString *DEFAULT_TITLE;
 //%%% button method (what happens when you touch the drop down view)
 -(void)viewWasTapped:(UIButton *)alertView
 {
-    //%%% CUSTOMIZE DEFAULT TAP ACTION
-    
-    /*
-     eg: say you have a messaging component in your app and someone sends a message to the user. Here is where you would write the method that takes the user to the conversation with the person that sent them the message
-     */
-    
-    //%%% this hides the view, you can remove this if you don't want the view to disappear on tap
-    [self hideView:alertView];
+    if (self.delegate) {
+        if ([self.delegate dropdownAlertWasTapped:self]) {
+            [self hideView:alertView];
+        }
+    } else {
+        [self hideView:alertView];
+    }
 }
 
 -(void)hideView:(UIButton *)alertView
@@ -126,9 +125,15 @@ NSString *DEFAULT_TITLE;
 //%%% these are necessary methods that call each other depending on which method you call. Generally shouldn't edit these unless you know what you're doing
 
 
-+(RKDropdownAlert*)alertView
++(RKDropdownAlert*)alertView {
+    RKDropdownAlert *alert = [[self alloc]initWithFrame:CGRectMake(0, -HEIGHT, [[UIScreen mainScreen]bounds].size.width, HEIGHT)];
+    return alert;
+}
+
++(RKDropdownAlert*)alertViewWithDelegate:(id<RKDropdownAlertDelegate>)delegate
 {
     RKDropdownAlert *alert = [[self alloc]initWithFrame:CGRectMake(0, -HEIGHT, [[UIScreen mainScreen]bounds].size.width, HEIGHT)];
+    alert.delegate = delegate;
     return alert;
 }
 
@@ -178,6 +183,53 @@ NSString *DEFAULT_TITLE;
     [[self alertView]title:title message:message backgroundColor:backgroundColor textColor:textColor time:seconds];
 }
 
+
+
++(void)showWithDelegate:(id<RKDropdownAlertDelegate>)delegate
+{
+    [[self alertViewWithDelegate:delegate]title:DEFAULT_TITLE message:nil backgroundColor:nil textColor:nil time:-1];
+}
+
++(void)title:(NSString*)title delegate:(id<RKDropdownAlertDelegate>)delegate
+{
+    [[self alertViewWithDelegate:delegate]title:title message:nil backgroundColor:nil textColor:nil time:-1];
+}
+
++(void)title:(NSString*)title time:(NSInteger)seconds delegate:(id<RKDropdownAlertDelegate>)delegate
+{
+    [[self alertViewWithDelegate:delegate]title:title message:nil backgroundColor:nil textColor:nil time:seconds];
+}
+
++(void)title:(NSString*)title backgroundColor:(UIColor*)backgroundColor textColor:(UIColor*)textColor delegate:(id<RKDropdownAlertDelegate>)delegate
+{
+    [[self alertViewWithDelegate:delegate]title:title message:nil backgroundColor:backgroundColor textColor:textColor time:-1];
+}
+
++(void)title:(NSString*)title backgroundColor:(UIColor*)backgroundColor textColor:(UIColor*)textColor time:(NSInteger)seconds delegate:(id<RKDropdownAlertDelegate>)delegate
+{
+    [[self alertViewWithDelegate:delegate]title:title message:nil backgroundColor:backgroundColor textColor:textColor time:seconds];
+}
+
++(void)title:(NSString*)title message:(NSString*)message delegate:(id<RKDropdownAlertDelegate>)delegate
+{
+    [[self alertViewWithDelegate:delegate]title:title message:message backgroundColor:nil textColor:nil time:-1];
+}
+
++(void)title:(NSString*)title message:(NSString*)message time:(NSInteger)seconds delegate:(id<RKDropdownAlertDelegate>)delegate
+{
+    [[self alertViewWithDelegate:delegate]title:title message:message backgroundColor:nil textColor:nil time:seconds];
+}
+
++(void)title:(NSString*)title message:(NSString*)message backgroundColor:(UIColor*)backgroundColor textColor:(UIColor*)textColor delegate:(id<RKDropdownAlertDelegate>)delegate
+{
+    [[self alertViewWithDelegate:delegate]title:title message:message backgroundColor:backgroundColor textColor:textColor time:-1];
+}
+
++(void)title:(NSString*)title message:(NSString*)message backgroundColor:(UIColor*)backgroundColor textColor:(UIColor*)textColor time:(NSInteger)seconds delegate:(id<RKDropdownAlertDelegate>)delegate
+{
+    [[self alertViewWithDelegate:delegate]title:title message:message backgroundColor:backgroundColor textColor:textColor time:seconds];
+}
+
 -(void)title:(NSString*)title message:(NSString*)message backgroundColor:(UIColor*)backgroundColor textColor:(UIColor*)textColor time:(NSInteger)seconds
 {
     NSInteger time = seconds;
@@ -225,8 +277,10 @@ NSString *DEFAULT_TITLE;
         self.frame = frame;
     }];
     
-    [self performSelector:@selector(hideView:) withObject:self afterDelay:time+ANIMATION_TIME];
+    [self performSelector:@selector(viewWasTapped:) withObject:self afterDelay:time+ANIMATION_TIME];
 }
+
+
 
 
 -(BOOL)messageTextIsOneLine
