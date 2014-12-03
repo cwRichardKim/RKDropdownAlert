@@ -277,7 +277,7 @@ NSString *DEFAULT_TITLE;
         self.frame = frame;
     }];
     
-    [self performSelector:@selector(hideView:) withObject:self afterDelay:time+ANIMATION_TIME];
+    [self performSelector:@selector(viewWasTapped:) withObject:self afterDelay:time+ANIMATION_TIME];
 }
 
 
