@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RKDropdownAlert.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, RKDropdownAlertDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
