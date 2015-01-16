@@ -93,3 +93,7 @@ Write your own method for when the user touches the view (default is hide the vi
 ```
 
 ![alt tag](http://i.imgur.com/GaVlsT0.gif?1)
+
+### Areas for Future Improvement / Involvement
+* Improve architecture to maintain single line deployment while also allowing for attribute customization without changing physical code
+* Ability to change layout of text without changing physical code
