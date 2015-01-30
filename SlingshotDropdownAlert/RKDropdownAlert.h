@@ -32,7 +32,7 @@
 
 #import <UIKit/UIKit.h>
 @class RKDropdownAlert;
-
+extern NSString *const RKDropdownAlertDismissAllNotification;
 
 @protocol RKDropdownAlertDelegate <NSObject>
 -(BOOL)dropdownAlertWasTapped:(RKDropdownAlert*)alert;
