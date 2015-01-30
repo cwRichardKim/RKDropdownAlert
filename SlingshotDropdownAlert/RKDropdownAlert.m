@@ -247,6 +247,10 @@ NSString *DEFAULT_TITLE;
     [[self alertViewWithDelegate:delegate]title:title message:message backgroundColor:backgroundColor textColor:textColor time:seconds];
 }
 
++(void)dismissAllAlert{
+    [[NSNotificationCenter defaultCenter] postNotificationName:RKDropdownAlertDismissAllNotification object:nil];
+}
+
 -(void)title:(NSString*)title message:(NSString*)message backgroundColor:(UIColor*)backgroundColor textColor:(UIColor*)textColor time:(NSInteger)seconds
 {
     NSInteger time = seconds;
