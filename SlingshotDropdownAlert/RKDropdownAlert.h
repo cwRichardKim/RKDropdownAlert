@@ -32,7 +32,7 @@
 
 #import <UIKit/UIKit.h>
 @class RKDropdownAlert;
-
+extern NSString *const RKDropdownAlertDismissAllNotification;
 
 @protocol RKDropdownAlertDelegate <NSObject>
 -(BOOL)dropdownAlertWasTapped:(RKDropdownAlert*)alert;
@@ -63,7 +63,7 @@
 +(void)title:(NSString*)title message:(NSString*)message time:(NSInteger)seconds delegate:(id<RKDropdownAlertDelegate>)delegate;
 +(void)title:(NSString*)title message:(NSString*)message backgroundColor:(UIColor*)backgroundColor textColor:(UIColor*)textColor delegate:(id<RKDropdownAlertDelegate>)delegate;
 +(void)title:(NSString*)title message:(NSString*)message backgroundColor:(UIColor*)backgroundColor textColor:(UIColor*)textColor time:(NSInteger)seconds delegate:(id<RKDropdownAlertDelegate>)delegate;
-
++(void)dismissAllAlert;
 
 @property UIColor *defaultViewColor;
 @property UIColor *defaultTextColor;

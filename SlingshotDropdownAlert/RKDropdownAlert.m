@@ -8,6 +8,7 @@
 //  objective-c objc obj c
 
 #import "RKDropdownAlert.h"
+NSString *const RKDropdownAlertDismissAllNotification = @"RKDropdownAlertDismissAllNotification";
 
 //%%% CUSTOMIZE FOR DEFAULT SETTINGS
 // These values specify what the view will look like
@@ -72,10 +73,26 @@ NSString *DEFAULT_TITLE;
         [self addSubview:messageLabel];
         
         [self addTarget:self action:@selector(hideView:) forControlEvents:UIControlEventTouchUpInside];
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(dismissAlertView)
+                                                     name:RKDropdownAlertDismissAllNotification
+                                                   object:nil];
+
     }
     return self;
 }
 
+- (void)dismissAlertView {
+    [self hideView:self];
+}
+
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:RKDropdownAlertDismissAllNotification
+                                                  object:nil];
+}
 
 //%%% button method (what happens when you touch the drop down view)
 -(void)viewWasTapped:(UIButton *)alertView
@@ -228,6 +245,10 @@ NSString *DEFAULT_TITLE;
 +(void)title:(NSString*)title message:(NSString*)message backgroundColor:(UIColor*)backgroundColor textColor:(UIColor*)textColor time:(NSInteger)seconds delegate:(id<RKDropdownAlertDelegate>)delegate
 {
     [[self alertViewWithDelegate:delegate]title:title message:message backgroundColor:backgroundColor textColor:textColor time:seconds];
+}
+
++(void)dismissAllAlert{
+    [[NSNotificationCenter defaultCenter] postNotificationName:RKDropdownAlertDismissAllNotification object:nil];
 }
 
 -(void)title:(NSString*)title message:(NSString*)message backgroundColor:(UIColor*)backgroundColor textColor:(UIColor*)textColor time:(NSInteger)seconds
