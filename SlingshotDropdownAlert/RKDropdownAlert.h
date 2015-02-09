@@ -36,6 +36,7 @@ extern NSString *const RKDropdownAlertDismissAllNotification;
 
 @protocol RKDropdownAlertDelegate <NSObject>
 -(BOOL)dropdownAlertWasTapped:(RKDropdownAlert*)alert;
+-(BOOL)dropdownAlertWasDismissed;
 @end
 
 @interface RKDropdownAlert : UIButton
@@ -67,6 +68,7 @@ extern NSString *const RKDropdownAlertDismissAllNotification;
 
 @property UIColor *defaultViewColor;
 @property UIColor *defaultTextColor;
+@property BOOL isShowing;
 @property id<RKDropdownAlertDelegate> delegate;
 
 -(void)title:(NSString*)title message:(NSString*)message backgroundColor:(UIColor*)backgroundColor textColor:(UIColor*)textColor time:(NSInteger)seconds;
