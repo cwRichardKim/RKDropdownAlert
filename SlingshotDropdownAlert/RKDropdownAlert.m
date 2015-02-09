@@ -78,6 +78,7 @@ NSString *DEFAULT_TITLE;
                                                  selector:@selector(dismissAlertView)
                                                      name:RKDropdownAlertDismissAllNotification
                                                    object:nil];
+        self.isShowing = NO;
 
     }
     return self;
@@ -122,6 +123,10 @@ NSString *DEFAULT_TITLE;
 {
     if (alertView){
         [alertView removeFromSuperview];
+        self.isShowing = NO;
+        if (self.delegate){
+            [self.delegate dropdownAlertWasDismissed];
+        }
     }
 }
 
@@ -291,6 +296,8 @@ NSString *DEFAULT_TITLE;
                 break;
             }
     }
+    
+    self.isShowing = YES;
     
     [UIView animateWithDuration:ANIMATION_TIME animations:^{
         CGRect frame = self.frame;
