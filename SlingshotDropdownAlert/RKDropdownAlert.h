@@ -32,45 +32,224 @@
 
 #import <UIKit/UIKit.h>
 @class RKDropdownAlert;
+
+/*!
+ Notification posted when the alert is dismissed.
+ */
 extern NSString *const RKDropdownAlertDismissAllNotification;
 
+/*!
+ The dropdown alert delegate.
+ */
 @protocol RKDropdownAlertDelegate <NSObject>
+
+/*!
+ Fires when the alert was tapped by the user.
+ @param The instance of <RKDropdownAlert> that was tapped.
+ */
 -(BOOL)dropdownAlertWasTapped:(RKDropdownAlert*)alert;
+
+/*!
+ Fires when the alert was dismissed.
+ */
 -(BOOL)dropdownAlertWasDismissed;
+
 @end
 
+/*!
+ The dropdown alert.
+ */
 @interface RKDropdownAlert : UIButton
 
 
 //%%% Additions: title, message, time, background color, text color
 
+/*!
+ Shows the default alert.
+ You should extend RKDropdownAlert to set the appropriate params like title, message, color, etc.
+ */
 +(void)show;
+
+/*!
+ Shows an alert with the specified title.
+ @param title The title to show.
+ */
 +(void)title:(NSString*)title;
+
+/*!
+ Shows an alert with the specified title for a specific duration.
+ @param title The title to show.
+ @param seconds Number of seconds that the alert should remain visible.
+ */
 +(void)title:(NSString*)title time:(NSInteger)seconds;
+
+/*!
+ Shows an alert with the specified title and colors.
+ @param title The title to show.
+ @param backgroundColor Background color.
+ @param textColor Text color.
+ */
 +(void)title:(NSString*)title backgroundColor:(UIColor*)backgroundColor textColor:(UIColor*)textColor;
+
+/*!
+ Shows an alert with the specified title and colors for a specific duration.
+ @param title The title to show.
+ @param backgroundColor Background color.
+ @param textColor Text color.
+ @param seconds Number of seconds that the alert should remain visible.
+ */
 +(void)title:(NSString*)title backgroundColor:(UIColor*)backgroundColor textColor:(UIColor*)textColor time:(NSInteger)seconds;
 
+
+/*!
+ Shows an alert with the specified title and message.
+ @param title The title to show.
+ @param message The message to show.
+ */
 +(void)title:(NSString*)title message:(NSString*)message;
+
+/*!
+ Shows an alert with the specified title and message for a specific duration.
+ @param title The title to show.
+ @param message The message to show.
+ @param seconds Number of seconds that the alert should remain visible.
+ */
 +(void)title:(NSString*)title message:(NSString*)message time:(NSInteger)seconds;
+
+/*!
+ Shows an alert with the specified title, message, and colors.
+ @param title The title to show.
+ @param message The message to show.
+ @param backgroundColor Background color.
+ @param textColor Text color.
+ */
 +(void)title:(NSString*)title message:(NSString*)message backgroundColor:(UIColor*)backgroundColor textColor:(UIColor*)textColor;
+
+/*!
+ Shows an alert with the specified title, message, and colors for a specific duration.
+ @param title The title to show.
+ @param message The message to show.
+ @param backgroundColor Background color.
+ @param textColor Text color.
+ @param seconds Number of seconds that the alert should remain visible.
+ */
 +(void)title:(NSString*)title message:(NSString*)message backgroundColor:(UIColor*)backgroundColor textColor:(UIColor*)textColor time:(NSInteger)seconds;
 
+
+/*!
+ Shows the default alert with a delegate.
+ You should extend RKDropdownAlert to set the appropriate params like title, message, color, etc.
+ @param delegate An instance implementing <RKDropdownAlertDelegate>
+ */
 +(void)showWithDelegate:(id<RKDropdownAlertDelegate>)delegate;
+
+/*!
+ Shows an alert with the specified title.
+ @param title The title to show.
+ @param delegate An instance implementing <RKDropdownAlertDelegate>
+ */
 +(void)title:(NSString*)title delegate:(id<RKDropdownAlertDelegate>)delegate;
+
+/*!
+ Shows an alert with the specified title for a specific duration.
+ @param title The title to show.
+ @param seconds Number of seconds that the alert should remain visible.
+ @param delegate An instance implementing <RKDropdownAlertDelegate>
+ */
 +(void)title:(NSString*)title time:(NSInteger)seconds delegate:(id<RKDropdownAlertDelegate>)delegate;
+
+/*!
+ Shows an alert with the specified title and colors.
+ @param title The title to show.
+ @param backgroundColor Background color.
+ @param textColor Text color.
+ @param delegate An instance implementing <RKDropdownAlertDelegate>
+ */
 +(void)title:(NSString*)title backgroundColor:(UIColor*)backgroundColor textColor:(UIColor*)textColor delegate:(id<RKDropdownAlertDelegate>)delegate;
+
+/*!
+ Shows an alert with the specified title and colors for a specific duration.
+ @param title The title to show.
+ @param backgroundColor Background color.
+ @param textColor Text color.
+ @param seconds Number of seconds that the alert should remain visible.
+ @param delegate An instance implementing <RKDropdownAlertDelegate>
+ */
 +(void)title:(NSString*)title backgroundColor:(UIColor*)backgroundColor textColor:(UIColor*)textColor time:(NSInteger)seconds delegate:(id<RKDropdownAlertDelegate>)delegate;
+
+
+/*!
+ Shows an alert with the specified title and message.
+ @param title The title to show.
+ @param message The message to show.
+ @param delegate An instance implementing <RKDropdownAlertDelegate>
+ */
 +(void)title:(NSString*)title message:(NSString*)message delegate:(id<RKDropdownAlertDelegate>)delegate;
+
+/*!
+ Shows an alert with the specified title and message for a specific duration.
+ @param title The title to show.
+ @param message The message to show.
+ @param seconds Number of seconds that the alert should remain visible.
+ @param delegate An instance implementing <RKDropdownAlertDelegate>
+ */
 +(void)title:(NSString*)title message:(NSString*)message time:(NSInteger)seconds delegate:(id<RKDropdownAlertDelegate>)delegate;
+
+/*!
+ Shows an alert with the specified title, message, and colors.
+ @param title The title to show.
+ @param message The message to show.
+ @param backgroundColor Background color.
+ @param textColor Text color.
+ @param delegate An instance implementing <RKDropdownAlertDelegate>
+ */
 +(void)title:(NSString*)title message:(NSString*)message backgroundColor:(UIColor*)backgroundColor textColor:(UIColor*)textColor delegate:(id<RKDropdownAlertDelegate>)delegate;
+
+/*!
+ Shows an alert with the specified title, message, and colors for a specific duration.
+ @param title The title to show.
+ @param message The message to show.
+ @param backgroundColor Background color.
+ @param textColor Text color.
+ @param seconds Number of seconds that the alert should remain visible.
+ @param delegate An instance implementing <RKDropdownAlertDelegate>
+ */
 +(void)title:(NSString*)title message:(NSString*)message backgroundColor:(UIColor*)backgroundColor textColor:(UIColor*)textColor time:(NSInteger)seconds delegate:(id<RKDropdownAlertDelegate>)delegate;
+
+/*!
+ Dismisses the displayed alert.
+ */
 +(void)dismissAllAlert;
 
+/*!
+ Default background color.
+ */
 @property UIColor *defaultViewColor;
+
+/*!
+ Default text color.
+ */
 @property UIColor *defaultTextColor;
+
+/*!
+ Returns TRUE if the alert is currently displayed to the user.
+ */
 @property BOOL isShowing;
+
+/*!
+ The alert delegate.
+ */
 @property id<RKDropdownAlertDelegate> delegate;
 
+
+/*!
+ Shows the instantiated alert with the specified title, message, and colors for a specific duration.
+ @param title The title to show.
+ @param message The message to show.
+ @param backgroundColor Background color.
+ @param textColor Text color.
+ @param seconds Number of seconds that the alert should remain visible.
+ */
 -(void)title:(NSString*)title message:(NSString*)message backgroundColor:(UIColor*)backgroundColor textColor:(UIColor*)textColor time:(NSInteger)seconds;
 
 @end
