@@ -8,6 +8,7 @@
 //  objective-c objc obj c
 
 #import "RKDropdownAlert.h"
+
 NSString *const RKDropdownAlertDismissAllNotification = @"RKDropdownAlertDismissAllNotification";
 
 //%%% CUSTOMIZE FOR DEFAULT SETTINGS
@@ -28,12 +29,7 @@ NSString *DEFAULT_TITLE;
 @synthesize defaultTextColor;
 @synthesize defaultViewColor;
 
-//////////////////////////////////////////////////////////
-//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-//%%%%%%%%%%%%%%%       customizable       %%%%%%%%%%%%%%%
-//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-//
+#pragma mark CUSTOMIZABLE
 
 //%%% CUSTOMIZE DEFAULT VALUES
 // These are the default value. For example, if you don't specify a color, then
@@ -88,7 +84,6 @@ NSString *DEFAULT_TITLE;
     [self hideView:self];
 }
 
-
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self
                                                     name:RKDropdownAlertDismissAllNotification
@@ -130,22 +125,11 @@ NSString *DEFAULT_TITLE;
     }
 }
 
-//
-//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-//%%%%%%%%%%%%%%%       customizable        %%%%%%%%%%%%%%
-//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-//////////////////////////////////////////////////////////
 
 
-//////////////////////////////////////////////////////////
-//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-//%%%%%%%%%%%%%%%          Ignore          %%%%%%%%%%%%%%%
-//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-//
+#pragma mark IGNORE THESE
+
 //%%% these are necessary methods that call each other depending on which method you call. Generally shouldn't edit these unless you know what you're doing
-
 
 +(RKDropdownAlert*)alertView {
     RKDropdownAlert *alert = [[self alloc]initWithFrame:CGRectMake(0, -HEIGHT, [[UIScreen mainScreen]bounds].size.width, HEIGHT)];
@@ -323,10 +307,4 @@ NSString *DEFAULT_TITLE;
     return YES;
 }
 
-//
-//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-//%%%%%%%%%%%%%%%           Ignore          %%%%%%%%%%%%%%
-//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-//////////////////////////////////////////////////////////
 @end
