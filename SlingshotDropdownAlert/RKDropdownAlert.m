@@ -245,7 +245,7 @@ NSString *DEFAULT_TITLE;
     NSInteger time = seconds;
     titleLabel.text = title;
     
-    if (message) {
+    if (message && message.length > 0) {
         messageLabel.text = message;
         if ([self messageTextIsOneLine]) {
             CGRect frame = titleLabel.frame;
