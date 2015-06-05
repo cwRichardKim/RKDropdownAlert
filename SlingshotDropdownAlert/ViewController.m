@@ -38,14 +38,18 @@
     self.titleTextField.center = CGPointMake(self.view.frame.size.width / 2, 120);
     self.titleTextField.placeholder = @"title";
     self.titleTextField.delegate = self;
-    self.titleTextField.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.03];
+    self.titleTextField.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.05];
+    self.titleTextField.layer.cornerRadius = 5.0;
+    [self.titleTextField setTextAlignment:NSTextAlignmentCenter];
     [self.view addSubview:self.titleTextField];
 
     self.messageTextField = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width * 0.7, 40)];
     self.messageTextField.center = CGPointMake(self.view.frame.size.width / 2, 170);
     self.messageTextField.placeholder = @"message";
     self.messageTextField.delegate = self;
-    self.messageTextField.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.03];
+    self.messageTextField.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.05];
+    self.messageTextField.layer.cornerRadius = 5.0;
+    [self.messageTextField setTextAlignment:NSTextAlignmentCenter];
     [self.view addSubview:self.messageTextField];
 
     UIButton* alertButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 200, 50)];
