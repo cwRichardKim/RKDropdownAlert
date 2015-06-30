@@ -22,6 +22,7 @@
 		993A286D197803A800B9F8F0 /* SlingshotDropdownAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 993A286C197803A800B9F8F0 /* SlingshotDropdownAlertTests.m */; };
 		9976F72D19AD7B80009FE604 /* RKDropdownAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 9976F72C19AD7B80009FE604 /* RKDropdownAlert.m */; };
 		9976F73019AD7B9A009FE604 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9976F72F19AD7B9A009FE604 /* ViewController.m */; };
+		D85E05931B426183004E0246 /* module.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = D85E05921B426183004E0246 /* module.modulemap */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		9976F72C19AD7B80009FE604 /* RKDropdownAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKDropdownAlert.m; sourceTree = "<group>"; };
 		9976F72E19AD7B9A009FE604 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9976F72F19AD7B9A009FE604 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D85E05921B426183004E0246 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		993A2847197803A800B9F8F0 /* SlingshotDropdownAlert */ = {
 			isa = PBXGroup;
 			children = (
+				D85E05921B426183004E0246 /* module.modulemap */,
 				993A2850197803A800B9F8F0 /* AppDelegate.h */,
 				993A2851197803A800B9F8F0 /* AppDelegate.m */,
 				993A2853197803A800B9F8F0 /* Main.storyboard */,
@@ -254,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D85E05931B426183004E0246 /* module.modulemap in Sources */,
 				993A2852197803A800B9F8F0 /* AppDelegate.m in Sources */,
 				9976F72D19AD7B80009FE604 /* RKDropdownAlert.m in Sources */,
 				9976F73019AD7B9A009FE604 /* ViewController.m in Sources */,
