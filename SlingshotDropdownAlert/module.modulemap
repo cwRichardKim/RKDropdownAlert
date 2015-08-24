@@ -1,0 +1,4 @@
+framework module RKDropdownAlert {
+  header "RKDropdownAlert.h"
+  export *
+}

@@ -1,3 +1,4 @@
+# coding: utf-8
 #
 #  Be sure to run `pod spec lint RKSwipeBetweenViewControllers.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
@@ -82,6 +83,7 @@ s.source       = { :git => "https://github.com/cwRichardKim/RKDropdownAlert.git"
 #
 
 s.source_files  = 'SlingshotDropdownAlert/RKDropdownAlert.h', 'SlingshotDropdownAlert/RKDropdownAlert.m'
+s.module_map = 'SlingshotDropdownAlert/module.modulemap'
 
 # s.public_header_files = "Classes/**/*.h"
 
