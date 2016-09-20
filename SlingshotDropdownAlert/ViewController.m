@@ -16,7 +16,20 @@
 
 @end
 
+@interface ViewController () <RKDropdownAlertDelegate>
+@end
+
 @implementation ViewController
+
+- (BOOL)dropdownAlertWasTapped:(RKDropdownAlert*)alert {
+    NSLog(@"Tapped");
+    return YES;
+}
+
+- (BOOL)dropdownAlertWasDismissed {
+    NSLog(@"Dismissed");
+    return YES;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -67,7 +80,7 @@
     if (title.length == 0 && message.length == 0) {
         [RKDropdownAlert show];
     } else {
-        [RKDropdownAlert title:title message:message backgroundColor:nil textColor:nil time:5];
+        [RKDropdownAlert title:title message:message backgroundColor:nil textColor:nil time:5 delegate:self];
     }
 
     // other examples:

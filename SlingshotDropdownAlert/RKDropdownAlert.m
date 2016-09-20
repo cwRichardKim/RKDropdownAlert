@@ -68,7 +68,7 @@ NSString *DEFAULT_TITLE;
         messageLabel.textAlignment = NSTextAlignmentCenter;
         [self addSubview:messageLabel];
         
-        [self addTarget:self action:@selector(hideView:) forControlEvents:UIControlEventTouchUpInside];
+        [self addTarget:self action:@selector(viewWasTapped:) forControlEvents:UIControlEventTouchUpInside];
         
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(dismissAlertView)
@@ -289,7 +289,7 @@ NSString *DEFAULT_TITLE;
         self.frame = frame;
     }];
     
-    [self performSelector:@selector(viewWasTapped:) withObject:self afterDelay:time+ANIMATION_TIME];
+    [self performSelector:@selector(hideView:) withObject:self afterDelay:time+ANIMATION_TIME];
 }
 
 
