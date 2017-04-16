@@ -3,30 +3,30 @@ RKDropdownAlert
 
 an extremely simple (and customizeable) alert alternative based on Facebook's app Slingshot, and inspiration from SVProgressHUD (yes, it's just as easy to use as SV).
 
-##Updates, Questions, and Requests
+## Updates, Questions, and Requests
 [Support](http://cwrichardkim.com) or [twitter](https://twitter.com/cwRichardKim) <--- I am a very light twitterer, so I wont spam you
 
 __Article comparing UIAlertView, SVProgressHUD and RKropdownAlert__
 
 https://medium.com/@cwRichardKim/devux-uialertview-alternatives-3a78ab64cbf8
 
-##Pod
+## Pod
 WAIT! Don't use pods if you want to customize or use the quick and easy [RKDropdownAlert show]
 
 	pod 'RKDropdownAlert'
 
-##Demo:
+## Demo:
 ``` objc
 [RKDropdownAlert title:@"Hello World" message:@"Tons better than UIAlertView!"];
 ```
 ![alt tag](http://i.imgur.com/tE5p9L0.gif?1)
 
-##In Action:
+## In Action:
 ![first](http://i.imgur.com/d6voW3W.gif)  
 
 ![second](http://i.imgur.com/OlYystx.gif)
 
-##Easy Default Call
+## Easy Default Call
 ``` objc
 [RKDropdownAlert show];
 ```
@@ -34,12 +34,12 @@ Set the default text, color, size, font, etc so that when you call "show" it pul
 
 ![easy](http://i.imgur.com/M0cH5DF.gif?1)
 
-##Setup
+## Setup
 
 
 First, download the file, or create a branch of the repo. Copy the following into your parent controller:
 ``` objc
-#import "RKDropdownAlert.h"
+# import "RKDropdownAlert.h"
 ```
 
 You will probably want to customize the default call ([RKDropdownAlert show]), as well as other features such as color, the method called when the user taps the view, etc.  Look for
@@ -49,7 +49,7 @@ You will probably want to customize the default call ([RKDropdownAlert show]), a
 tags in the RKDropdownAlert.m for methods that you should customize.
 
 
-##Calling the Alert
+## Calling the Alert
 
 Use the following variations of title, message, backgroundColor, textColor, and time
 ``` objc
@@ -74,7 +74,7 @@ For example:
 [RKDropdownAlert title:@"Hello World" message:@"tons better than UIAlertView" backgroundColor:[UIColor grayColor] textColor:[UIColor whiteColor] time:10];
 ```
 
-##Touch Up Inside Method
+## Touch Up Inside Method
 Write your own method for when the user touches the view (default is hide the view)
 
 ``` objc
