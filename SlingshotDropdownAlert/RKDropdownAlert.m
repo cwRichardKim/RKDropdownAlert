@@ -64,8 +64,10 @@ NSString *DEFAULT_TITLE;
         messageLabel.textColor = defaultTextColor;
         messageLabel.font = [messageLabel.font fontWithSize:FONT_SIZE];
         messageLabel.lineBreakMode = NSLineBreakByWordWrapping;
-        messageLabel.numberOfLines = 2; // 2 lines ; 0 - dynamic number of lines
+        messageLabel.numberOfLines = 0; // 2 lines ; 0 - dynamic number of lines
         messageLabel.textAlignment = NSTextAlignmentCenter;
+
+        messageLabel.autoresizingMask = UIViewAutoresizingFlexibleHeight;
         [self addSubview:messageLabel];
         
         [self addTarget:self action:@selector(viewWasTapped:) forControlEvents:UIControlEventTouchUpInside];
@@ -252,11 +254,16 @@ NSString *DEFAULT_TITLE;
             frame.origin.y = STATUS_BAR_HEIGHT+5;
             titleLabel.frame = frame;
         }
+
+        CGRect frame = self.frame;
+        frame.size.height = [self estimateHeight];
+        self.frame = frame;
     } else {
         CGRect frame = titleLabel.frame;
         frame.size.height = HEIGHT-2*Y_BUFFER-STATUS_BAR_HEIGHT;
         frame.origin.y = Y_BUFFER+STATUS_BAR_HEIGHT;
         titleLabel.frame = frame;
+        // TODO: calculate height
     }
     
     if (backgroundColor) {
@@ -292,8 +299,11 @@ NSString *DEFAULT_TITLE;
     [self performSelector:@selector(hideView:) withObject:self afterDelay:time+ANIMATION_TIME];
 }
 
-
-
+- (int)estimateHeight {
+    CGSize constraint = CGSizeMake(messageLabel.frame.size.width, 9999);
+    CGSize size = [messageLabel sizeThatFits:constraint];
+    return messageLabel.frame.origin.y + size.height + 2*Y_BUFFER; // height + padding
+}
 
 -(BOOL)messageTextIsOneLine
 {
